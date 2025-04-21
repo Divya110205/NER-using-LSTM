@@ -5,21 +5,42 @@
 To develop an LSTM-based model for recognizing the named entities in the text.
 
 ## Problem Statement and Dataset
-
+Develop an LSTM-based model to recognize named entities from text using the ner_dataset.csv, with words and NER tags as features.
 
 ## DESIGN STEPS
 
 ### STEP 1:
+Import necessary libraries.
 
 ### STEP 2:
+Load dataset , Read and clean the input data.
 
 ### STEP 3:
+Structure data into sentences with word-tag pairs.
 
-Write your own steps
+### STEP 4:
+Convert words and tags to indices using vocab dictionaries.
+
+### STEP 5:
+Pad sequences, convert to tensors, and batch them.
+
+### STEP 6:
+Create a model with Embedding, BiLSTM, and Linear layers.
+
+### STEP 7:
+Use training data to update model weights with loss and optimizer.
+
+### STEP 8:
+Check performance on validation data after each epoch.
+
+### STEP 9:
+Display predictions or plot loss curves.
 
 ## PROGRAM
-### Name:
-### Register Number:
+
+### Name: Divya.A
+### Register Number: 212222230034
+
 ```python
 #Model definition
 class BiLSTMTagger(nn.Module):
@@ -80,6 +101,9 @@ def train_model(model, train_loader, test_loader, loss_fn, optimizer, epochs=3):
 
 
 ### Sample Text Prediction
-Include your sample text prediction here.
+
+![image](https://github.com/user-attachments/assets/1c114c49-5a40-4faf-b02d-91c3f869e5eb)
+
 
 ## RESULT
+Thus the LSTM-based Named Entity Recognition (NER) model was successfully developed and trained.
